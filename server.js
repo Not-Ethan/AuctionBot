@@ -1,4 +1,7 @@
 const Discord = require('discord.js');
+const api = require("@zikeji/hypixel");
+const client = new api.Client(process.env.KEY);
+
 const client = new Discord.Client();
 
 client.on('ready', () => {
@@ -11,4 +14,4 @@ client.on('message', message => {
   }
 });
 
-client.login('token');
+client.login(process.env.TOKEN);
