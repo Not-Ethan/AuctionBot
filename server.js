@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const api = require("@zikeji/hypixel");
-const client = new api.Client(process.env.KEY);
+const apiClient = new api.Client(process.env.KEY);
 
 const client = new Discord.Client();
 
